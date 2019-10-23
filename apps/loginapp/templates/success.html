@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Welcome</title>
+    {%load static%}
+    <link rel="stylesheet" href="{% static 'css/logandreg.css' %}">
+</head>
+<body>
+    <h1>Success! Welcome, {{request.session.first_name}}</h1>
+    <a href="/logout">Log Out</a>
+    <p class="success">
+        {% for message in messages %}
+            {{message}}
+        {%endfor%}
+    </p>
+    
+</body>
+</html>

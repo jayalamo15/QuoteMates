@@ -1,0 +1,23 @@
+* {
+    margin: auto 0;
+    /* outline: 1px solid red; */
+}
+.registration_header, .login_header{
+    display: inline-block;
+    width: 49.5%;
+}
+form{
+    display: inline-block;
+    width: 49.5%;
+    vertical-align: top;
+}
+p{
+    display: inline-block;
+    width: 49.5%;
+}
+.messages{
+    color: red;
+}
+.success{
+    color: green;
+}

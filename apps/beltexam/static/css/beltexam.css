@@ -1,0 +1,65 @@
+*{
+    margin: 0 auto;
+    /* outline: 1px solid red; */
+    box-sizing: border-box;
+    /* vertical-align: top; */
+}
+#wrapper{
+    width: 1000px;
+    
+}
+header.header{
+    margin: 1%;
+}
+header.header p{
+    display: inline-block;
+    margin-right: 72.5%;
+}
+div.left, div.right{
+    display: inline-block;
+    width: 48%;
+    margin-left: 1%;
+    margin-top: 1%;
+    padding: .5%;
+    vertical-align: top
+}
+p.quote_header{
+    text-align: center;
+}
+form.new_quote{
+    width: 50%
+}
+p.top{
+    display: inline-block;
+    width: 25%;
+    vertical-align: top;
+}
+textarea{
+    resize: none;
+    vertical-align: bottom
+}
+input.author_input{
+    width: 73%
+}
+p.submit{
+    text-align: center;
+}
+div.quote_box{
+    border-style: solid;
+    margin: 1%
+}
+div.quote_box p{
+    margin: 1%
+}
+form.like_form{
+    display: inline-block
+}
+div.update p{
+    margin: 1%;
+}
+div.user_quote p{
+    margin: 1%;
+    border-style: solid;
+    width: 25%;
+    padding: 1%;
+}

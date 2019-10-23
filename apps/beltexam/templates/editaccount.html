@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Edit Account</title>
+    {%load static%}
+    <link rel="stylesheet" href="{% static 'css/beltexam.css' %}">
+</head>
+<body>
+    <div id="wrapper">
+        <header class="header">
+            <p>Edit My Account</p>
+            <a href="/">Back</a>
+            <a href="/logout">Logout</a>
+        </header>
+        <main>
+            <div class="message">
+                {% if messages %}
+                <ul>
+                    {% for message in messages %}
+                    <li>{{message}}</li>
+                    {% endfor %}
+                </ul>
+                {% endif %}
+            </div>
+            <div class="update">
+                <form action="{{users.id}}/update" method="POST">
+                    {% csrf_token %}
+                    <p>First Name <input type="text" name="edit_first_name" value="{{request.session.first_name}}"></p>
+                    <p>Last name <input type="text" name="edit_last_name" value="{{request.session.last_name}}"></p>
+                    <p>Email <input type="text" name="edit_email" value="{{request.session.email}}"></p>
+                    <input type="submit" value="Update">
+                </form>
+            </div>
+            
+        </main>
+    </div>
+</body>
+</html>
