@@ -1,15 +1,22 @@
 * {
     margin: auto 0;
     /* outline: 1px solid red; */
+    background-color: lightgray;
 }
 .registration_header, .login_header{
     display: inline-block;
     width: 49.5%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.welcome_header{
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 form{
     display: inline-block;
     width: 49.5%;
     vertical-align: top;
+    font-family: fantasy;
 }
 p{
     display: inline-block;
@@ -20,4 +27,14 @@ p{
 }
 .success{
     color: green;
+}
+input.button{
+    margin-left: 50.10%;
+    font-size: large;
+    background-color: green;
+    color: white;
+}
+input{
+    background-color: white;
+    width: 45%;
 }

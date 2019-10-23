@@ -31,18 +31,21 @@
                 <p>Password</p>
                 <input type="password" name="registration_password">
                 <p>Confirm Password</p>
-                <input type="password" name="registration_confirm_password">
-                <input type="submit" value="Register">
+                <input c type="password" name="registration_confirm_password"><br>
+                <input class="button" type="submit" value="Register">
             </form>
             <form action="/login" method="POST">
                 {% csrf_token %}
                 <p>Email</p>
                 <input type="text" name="login_email">
                 <p>Password</p>
-                <input type="password" name="login_password">
-                <input type="submit" value="Login">
+                <input  type="password" name="login_password"><br>
+                <input class="button" type="submit" value="Login">
             </form>
         </main>
+        <footer>
+            <h1 class="welcome_header">Welcome to QuoteMates!</h1>
+        </footer>
     </div>
 </body>
 </html>
